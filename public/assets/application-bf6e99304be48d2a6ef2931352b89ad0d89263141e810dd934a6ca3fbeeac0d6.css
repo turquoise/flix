@@ -1,0 +1,636 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+
+
+*/
+
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* line 3, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+header#page-header {
+  color: #237CBE;
+  background: #80bfff;
+  padding: 5px;
+  border-bottom: 3px solid gainsboro;
+}
+/* line 8, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+header#page-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 14, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+footer#page-footer {
+  color: #F5F5F5;
+  background: #80bfff;
+  text-align: center;
+  padding: 5px;
+  border-top: 3px solid #1b6093;
+}
+
+/* line 22, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+aside#sidebar {
+  float: right;
+  background: #80bfff;
+  width: 200px;
+}
+/* line 3, C:/Sites/flix/app/assets/stylesheets/elements.css.scss */
+img {
+  border: 0;
+  border-width: 0;
+}
+
+/* line 8, C:/Sites/flix/app/assets/stylesheets/elements.css.scss */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 30px;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+/* line 16, C:/Sites/flix/app/assets/stylesheets/elements.css.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 20, C:/Sites/flix/app/assets/stylesheets/elements.css.scss */
+a:link,
+a:visited {
+  color: #444;
+}
+
+/* line 25, C:/Sites/flix/app/assets/stylesheets/elements.css.scss */
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #FFF;
+  background: #237CBE;
+}
+/* line 8, C:/Sites/flix/app/assets/stylesheets/movies.scss */
+article.movie img {
+  float: left;
+  margin: 0 15px;
+  border: 3px solid #237CBE;
+  height: 180px;
+  border: 1px solid #F5F5F5;
+}
+/* line 3, C:/Sites/flix/app/assets/stylesheets/buttons.css.scss */
+a.button {
+  display: inline-block;
+  border: 1px #c2c2c2 solid;
+  border-radius: 4px;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+/* line 9, C:/Sites/flix/app/assets/stylesheets/buttons.css.scss */
+a.button:hover {
+  background-color: #c2c2c2;
+  text-shadow: 0;
+  text-decoration: underline;
+}
+/* line 14, C:/Sites/flix/app/assets/stylesheets/buttons.css.scss */
+a.button.ok {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 19px;
+  background: -moz-linear-gradient(top, #7dd729 0%, #6ebd1e);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7dd729), to(#6ebd1e));
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #55a603;
+  -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5), inset 0px 0px 1px white;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5), inset 0px 0px 1px white;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5), inset 0px 0px 1px white;
+  text-shadow: 0px -1px 0px transparent, 0px 1px 0px rgba(255, 255, 255, 0);
+}
+/* FORMS */
+/* line 6, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+  background-color: #e6f2fa;
+  border: 0;
+  box-shadow: #aaa 0 0 8px;
+}
+/* line 13, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset label {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: .25em;
+}
+/* line 20, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset ol li {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+/* line 29, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset ol li.required label {
+  font-weight: bold;
+}
+/* line 35, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset input,
+fieldset label {
+  display: block;
+}
+/* line 40, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset input,
+fieldset textarea {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px;
+  border: 1px solid #c2c2c2;
+}
+/* line 49, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+/* line 55, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset div.field_with_errors {
+  display: inline;
+}
+/* line 57, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset div.field_with_errors label {
+  color: #DC3D3D;
+}
+/* line 60, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset div.field_with_errors input, fieldset div.field_with_errors textarea, fieldset div.field_with_errors select {
+  background: #FFC;
+}
+/* line 66, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset p input {
+  display: inline-block;
+}
+/* line 69, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+fieldset p a.button {
+  padding: 10px 15px;
+}
+
+/* line 75, C:/Sites/flix/app/assets/stylesheets/forms.css.scss */
+input[type="submit"] {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 0px black;
+  -moz-box-shadow: 0px 0px 0px black;
+  -webkit-box-shadow: 0px 0px 0px black;
+  background-color: white;
+  background-image: linear-gradient(-90deg, #eeeeee, #cccccc);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#eeeeee), to(#cccccc));
+  background-image: -moz-linear-gradient(-90deg, #eeeeee, #cccccc);
+}
+/* line 7, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+ul#users {
+  font-size: 1.15em;
+  list-style: none;
+  padding: 0;
+}
+/* line 12, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+ul#users li {
+  margin: 1em 0;
+}
+
+/* line 18, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user p {
+  padding: .5em 0;
+  font-size: 1.15em;
+  line-height: 1.25em;
+}
+/* line 24, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h2 {
+  margin: 0;
+  font-size: 100%;
+  color: #777;
+}
+/* line 30, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h3 {
+  padding-bottom: .5em;
+  margin: 1em 0;
+  font-size: 120%;
+  border-bottom: 1px solid #237CBE;
+}
+/* line 36, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h3.no-rule {
+  border: none;
+}
+/* line 41, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user img {
+  float: left;
+  margin-right: 20px;
+  border: 3px solid #237CBE;
+}
+/* line 47, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user header {
+  margin-bottom: 3em;
+}
+/* line 51, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user footer {
+  margin: 2em 0;
+  text-align: center;
+}
+/* line 55, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user footer nav {
+  margin-top: 2em;
+}
