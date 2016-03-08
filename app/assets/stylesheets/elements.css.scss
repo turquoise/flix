@@ -1,0 +1,30 @@
+@import "color";
+
+img {
+  border: 0;
+  border-width: 0;
+}
+
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 30px;
+  line-height: 1.5em;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:link,
+a:visited {
+  color: $primary-text-color;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: $secondary-link-color;
+  background: $secondary-background-color;
+}

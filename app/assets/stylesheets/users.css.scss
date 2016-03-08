@@ -24,14 +24,14 @@
    h2 {
      margin: 0;
      font-size: 100%;
-     color: $secondary-color;
+     color: $secondary-text-color;
    }
 
    h3 {
      padding-bottom: .5em;
      margin: 1em 0;
      font-size: 120%;
-     border-bottom: 1px solid $secondary-color;
+     border-bottom: 1px solid $secondary-background-color;
 
      &.no-rule {
        border: none;
@@ -41,7 +41,7 @@
    img {
      float: left;
      margin-right: 20px;
-     border: 3px solid $secondary-color;
+     border: 3px solid $secondary-background-color;
    }
 
    header {

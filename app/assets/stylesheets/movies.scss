@@ -8,8 +8,8 @@ article.movie {
   img {
     float: left;
     margin: 0 15px;
-    border: 3px solid $secondary-color;
+    border: 3px solid $secondary-background-color;
     height: 180px;
-    border: 1px solid $primary-color;
+    border: 1px solid $primary-background-color;
   }
 }
