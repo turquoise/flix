@@ -1,0 +1,105 @@
+/* line 3, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+header#page-header {
+  color: #F0F0F0;
+  background: #237CBE;
+  padding: 5px;
+  border-bottom: 3px solid #1b6093;
+}
+/* line 8, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+header#page-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 14, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+footer#page-footer {
+  color: #237CBE;
+  background: #F0F0F0;
+  text-align: center;
+  padding: 5px;
+  border-top: 3px solid #d7d7d7;
+}
+
+/* line 22, C:/Sites/flix/app/assets/stylesheets/layout.css.scss */
+aside#sidebar {
+  float: right;
+  background: #F0F0F0;
+  width: 200px;
+}
+/* line 8, C:/Sites/flix/app/assets/stylesheets/movies.scss */
+article.movie img {
+  float: left;
+  margin: 0 15px;
+  border: 3px solid #F0F0F0;
+  height: 180px;
+  border: 1px solid #237CBE;
+}
+/* line 7, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+ul#users {
+  font-size: 1.15em;
+  list-style: none;
+  padding: 0;
+}
+/* line 12, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+ul#users li {
+  margin: 1em 0;
+}
+
+/* line 18, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user p {
+  padding: .5em 0;
+  font-size: 1.15em;
+  line-height: 1.25em;
+}
+/* line 24, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h2 {
+  margin: 0;
+  font-size: 100%;
+  color: #F0F0F0;
+}
+/* line 30, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h3 {
+  padding-bottom: .5em;
+  margin: 1em 0;
+  font-size: 120%;
+  border-bottom: 1px solid #F0F0F0;
+}
+/* line 36, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user h3.no-rule {
+  border: none;
+}
+/* line 41, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user img {
+  float: left;
+  margin-right: 20px;
+  border: 3px solid #F0F0F0;
+}
+/* line 47, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user header {
+  margin-bottom: 3em;
+}
+/* line 51, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user footer {
+  margin: 2em 0;
+  text-align: center;
+}
+/* line 55, C:/Sites/flix/app/assets/stylesheets/users.css.scss */
+article#user footer nav {
+  margin-top: 2em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

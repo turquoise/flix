@@ -1,0 +1,107 @@
+<article>
+  <header>
+    <h1><% content_for(:title, @movie.title) %></h1>    
+  </header>
+
+  <h3>Average Review</h3>
+  <% if current_user %>
+    <% if @current_favorite %>
+      <%= button_to "Unfave", movie_favorite_path(@movie, @current_favorite), method: :delete %>
+    <% else %>  
+      <%= button_to "Fave", movie_favorites_path(@movie) %>
+  <% end %>
+<% end %>
+
+<p>
+  <%= format_average_stars(@movie) %>
+</p>
+  <h2>Description</h2>
+  <p>
+    <%= @movie.description %>
+  </p>
+  <h3>Rating</h3>
+  <p>
+    <%= @movie.rating %>
+  </p>
+  <p>
+    <%= pluralize(@fans.size, 'fan') %> 
+  </p>
+
+<% content_for :side do %>
+  <% if @fans.any? %>
+  <h3>Fans</h3>
+  <ul>
+    <% @fans.each do |user| %>
+      <li>
+        <%= link_to user.name, user %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<% end %>
+
+
+  <h3>Released On</h3>
+  <p>
+    <%= @movie.released_on %>
+  </p>
+  <h3>Total Gross</h3>
+  <p>
+    <%= format_total_gross(@movie) %>
+  </p>
+  <h3>Cast</h3>
+<p>
+  <%= @movie.cast %>
+</p>
+
+<h3>Director</h3>
+<p>
+  <%= @movie.director %>
+</p>
+
+<h3>Duration</h3>
+<p>
+  <%= @movie.duration %>
+</p>
+
+<h3>Image</h3>
+<p>
+<%= image_for(@movie) %>
+</p>
+
+<% if @movie.recent_reviews.any? %>
+  <h3>Recent Reviews</h3>
+  <ol id="reviews">
+    <% @movie.recent_reviews.each do |review| %>
+       ...
+    <% end %>
+  </ol>
+  <p>
+    Read all <%= link_to pluralize(@movie.reviews.size, "review"), 
+                    movie_reviews_path(@movie) %>
+  </p>
+<% end %>
+
+<% content_for :side do %>
+<h3>Genres</h3>
+<ul>
+  <% @genres.each do |genre| %>
+    <li><%= genre.name %></li>
+  <% end %>
+</ul>
+<% end %>
+            
+</article>
+
+<nav>
+  <% if current_user_admin? %>
+    <%= link_to "Edit", edit_movie_path(@movie) %> |
+    <%= link_to "Delete", movie_path(@movie), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
+</nav>
+<br/>
+<footer>
+<%= link_to "Write Review", new_movie_review_path(@movie),
+             class: 'button ok review' %>
+...
+</footer>
