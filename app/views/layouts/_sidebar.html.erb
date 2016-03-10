@@ -1,8 +1,9 @@
-<aside id="sidebar">
+
+  <div class="rightside">
   <nav>
     <ul>
-      <li>
-        <%= link_to 'All Movies', movies_path %>
+      <li class="movies">
+        <%= link_to 'All Movies', movies_path, class: 'button' %>
       </li>
 
       <li class="movies">
@@ -26,5 +27,8 @@
       <% end %>
     </ul>
   </nav>
-<%= content_for(:side) %>
-</aside>
+  <div class="side">
+    <%= content_for(:side) %>
+  </div>
+
+</div>

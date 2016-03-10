@@ -11,11 +11,10 @@
  * file per style scope.
  *
  *= require_self
- *= require normalize
+ *= require foundation_and_overrides
  *= require layout
  *= require elements
  *= require movies
- *= require buttons
  *= require forms
  *= require users
 */

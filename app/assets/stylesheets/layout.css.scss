@@ -1,27 +1,46 @@
 @import "color";
 
 header#page-header {
-  color: $secondary-background-color;
-  background: #80bfff;
   padding: 5px;
-  border-bottom: 3px solid darken($primary-background-color, 10%);
+  height: 60px;
+  border-style: none;
+  background: linear-gradient( #ff0000, #4d0000);
   h1 {
     text-align: center;
-    text-transform: uppercase;
+    color: white;
+    vertical-align: middle;
+    font-size: 30px;
   }
 }
 
 footer#page-footer {
-  color: $primary-background-color;
-  background: #80bfff;
+  color: #ffcccc;
+  background: #990000;
   text-align: center;
   padding: 5px;
-  border-top: 3px solid darken($secondary-background-color, 10%);
+  height: 40px;
+
+  
 }
 
-aside#sidebar {
-  float: right;
-  background: #80bfff;
+.rightside {
+  background: #85adad;
   width: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .side {
+    padding-left: 40px;
+  }
+}
+
+.button {
+  background-color:#476b6b;
+  width: 140px;
+  height: 30px;
+  color: white;
+  line-height: 5px;
+ 
+  
+
 }
 

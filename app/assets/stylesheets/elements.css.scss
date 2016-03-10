@@ -13,18 +13,11 @@ ol {
   list-style-type: none;
 }
 
-a {
-  text-decoration: underline;
-}
 
-a:link,
-a:visited {
-  color: $primary-text-color;
-}
 
 a:hover,
 a:active {
   text-decoration: none;
   color: $secondary-link-color;
-  background: $secondary-background-color;
+  background: #b30000;
 }

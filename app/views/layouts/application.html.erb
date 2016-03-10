@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title><%= page_title %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 <%= render "layouts/header" %>
 
 <div id="wrapper">
@@ -21,13 +24,23 @@
   </p>
 <% end %>
  <div id="container">
-<%= render "layouts/sidebar" %>
 
-<body>
+  <body>
 
-<%= yield %>
+<div class="row">
+  <div class="medium-12 columns">
+
+    <div class="medium-9 columns">
+
+      <%= yield %>
+    </div>
+    <div class="medium-3 columns">
+  <%= render "layouts/sidebar" %>
+  </div>
+  </div>
+</div>
 
 <%= render "layouts/footer" %>
-
-</body>
+<br/>
+  </body>
 </html>
